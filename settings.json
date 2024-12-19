@@ -1,0 +1,103 @@
+{
+  "workbench.colorTheme": "Default Dark Modern",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.scroll": 8,
+  "vim.leader": " ",
+  "vim.timeout": 1000,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["<Space>"], "commands": [] },
+    { "before": ["<S-l>"], "commands": ["workbench.action.nextEditor"] },
+    { "before": ["<S-h>"], "commands": ["workbench.action.previousEditor"] },
+    {
+      "before": ["<C-t>"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    { "before": ["<leader>", "r"], "commands": ["editor.action.rename"] },
+    {
+      "before": ["<leader>", "="],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": [
+        "workbench.action.files.save",
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": ["<leader>", "Q"],
+      "commands": ["workbench.action.closeOtherEditors"]
+    },
+    { "before": ["gc"], "commands": ["editor.action.commentLine"] },
+    { "before": ["<S-k>"], "commands": ["editor.action.showHover"] },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+    {
+      "before": ["<leader>", "f", "r"],
+      "commands": ["workbench.action.openRecent"]
+    },
+    {
+      "before": ["<leader>", "f", "g"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "f", "i"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    { "before": ["<leader>", "e"], "commands": ["workbench.view.explorer"] },
+    { "before": ["<C-d>"], "after": ["<C-d>", "zz"] },
+    { "before": ["<C-u>"], "after": ["<C-u>", "zz"] },
+    { "before": ["<C-o>"], "after": ["<C-o>", "zz"] },
+    { "before": ["<C-i>"], "after": ["<C-i>", "zz"] },
+    { "before": ["n"], "after": ["n", "zz"] },
+    { "before": ["N"], "after": ["N", "zz"] },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    { "before": ["g", "i"], "commands": ["editor.action.goToImplementation"] },
+    { "before": ["g", "D"], "commands": ["editor.action.revealDefinition"] },
+    { "before": ["g", "t"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["g", "d"], "commands": ["editor.action.peekTypeDefinition"] },
+    { "before": ["[", "g"], "commands": ["editor.action.marker.prev"] },
+    { "before": ["]", "g"], "commands": ["editor.action.marker.next"] },
+    {
+      "before": ["<Esc>"],
+      "commands": ["workbench.action.focusActiveEditorGroup"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    { "before": ["<S-l>"], "commands": ["workbench.action.nextEditor"] },
+    { "before": ["<S-h>"], "commands": ["workbench.action.previousEditor"] },
+    { "before": ["gc"], "commands": ["editor.action.commentLine"] },
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] }
+  ],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    { "before": ["<C-y>"], "commands": ["editor.action.suggest"] }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["J"],
+      "after": [":", "m", "'", ">", "+", "1", "<CR>", "g", "v", "=", "g", "v"]
+    },
+    {
+      "before": ["K"],
+      "after": [":", "m", "'", "<", "-", "2", "<CR>", "g", "v", "=", "g", "v"]
+    }
+  ],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {},
+  "editor.lineNumbers": "relative"
+}
