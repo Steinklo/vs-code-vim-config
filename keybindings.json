@@ -13,5 +13,14 @@
     "key": "ctrl+e",
     "command": "workbench.view.explorer",
     "when": "!editorTextFocus"
+  },
+  {
+    "key": "f1",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+alt+win+n",
+    "command": "-welcome.showNewFileEntries"
   }
 ]

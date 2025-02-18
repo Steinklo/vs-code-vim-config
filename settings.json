@@ -66,9 +66,9 @@
       "commands": ["editor.action.referenceSearch.trigger"]
     },
     { "before": ["g", "i"], "commands": ["editor.action.goToImplementation"] },
-    { "before": ["g", "D"], "commands": ["editor.action.revealDefinition"] },
+    { "before": ["g", "d"], "commands": ["editor.action.revealDefinition"] },
     { "before": ["g", "t"], "commands": ["workbench.action.quickOpen"] },
-    { "before": ["g", "d"], "commands": ["editor.action.peekTypeDefinition"] },
+    { "before": ["g", "D"], "commands": ["editor.action.peekTypeDefinition"] },
     { "before": ["[", "g"], "commands": ["editor.action.marker.prev"] },
     { "before": ["]", "g"], "commands": ["editor.action.marker.next"] },
     {
