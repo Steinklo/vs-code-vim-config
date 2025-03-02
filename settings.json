@@ -1,14 +1,25 @@
 {
   "workbench.colorTheme": "Default Dark Modern",
   "vim.easymotion": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(255, 255, 0, 0.3)", 
+  "vim.highlightedyank.duration": 200,
   "vim.incsearch": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
-  "vim.useSystemClipboard": true,
+  "vim.useSystemClipboard": false,
   "vim.scroll": 8,
   "vim.leader": " ",
   "vim.timeout": 1000,
   "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["x"], "after": ["\"", "*", "x"] },
+    { "before": ["X"], "after": ["\"", "*", "x", "x"] },
+    { "before": ["d"], "after": ["\"", "*", "d"] },
+    { "before": ["D"], "after": ["\"", "*", "d", "d"] },
+    { "before": ["y"], "after": ["\"", "*", "y"] },
+    { "before": ["Y"], "after": ["\"", "*", "y", "y"] },
+    { "before": ["p"], "after": ["\"", "*", "p"] },
+    { "before": ["P"], "after": ["\"", "*", "P"] },
     { "before": ["<Space>"], "commands": [] },
     { "before": ["<S-l>"], "commands": ["workbench.action.nextEditor"] },
     { "before": ["<S-h>"], "commands": ["workbench.action.previousEditor"] },
@@ -77,6 +88,14 @@
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
+    { "before": ["x"], "after": ["\"", "*", "x"] },
+    { "before": ["X"], "after": ["\"", "*", "x", "x"] },
+    { "before": ["d"], "after": ["\"", "*", "d"] },
+    { "before": ["D"], "after": ["\"", "*", "d", "d"] },
+    { "before": ["y"], "after": ["\"", "*", "y"] },
+    { "before": ["Y"], "after": ["\"", "*", "y", "y"] },
+    { "before": ["p"], "after": ["\"", "*", "p"] },
+    { "before": ["P"], "after": ["\"", "*", "P"] },
     { "before": ["<S-l>"], "commands": ["workbench.action.nextEditor"] },
     { "before": ["<S-h>"], "commands": ["workbench.action.previousEditor"] },
     { "before": ["gc"], "commands": ["editor.action.commentLine"] },
@@ -96,7 +115,7 @@
       "after": [":", "m", "'", "<", "-", "2", "<CR>", "g", "v", "=", "g", "v"]
     }
   ],
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {},
   "editor.lineNumbers": "relative"
