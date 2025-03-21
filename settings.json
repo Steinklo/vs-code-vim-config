@@ -2,7 +2,7 @@
   "workbench.colorTheme": "Default Dark Modern",
   "vim.easymotion": true,
   "vim.highlightedyank.enable": true,
-  "vim.highlightedyank.color": "rgba(255, 255, 0, 0.3)", 
+  "vim.highlightedyank.color": "rgba(255, 255, 0, 0.3)",
   "vim.highlightedyank.duration": 200,
   "vim.incsearch": true,
   "vim.useCtrlKeys": true,
@@ -12,6 +12,33 @@
   "vim.leader": " ",
   "vim.timeout": 1000,
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "s"],
+      "commands": [
+        {
+          "command": "vim.remap",
+          "args": {
+            "after": [
+              ":",
+              "%",
+              "s",
+              "/",
+              "<C-r>",
+              "<C-w>",
+              "/",
+              "<C-r>",
+              "<C-w>",
+              "/",
+              "g",
+              "I",
+              "<Left>",
+              "<Left>",
+              "<Left>"
+            ]
+          }
+        }
+      ]
+    },
     { "before": ["x"], "after": ["\"", "*", "x"] },
     { "before": ["X"], "after": ["\"", "*", "x", "x"] },
     { "before": ["d"], "after": ["\"", "*", "d"] },
@@ -118,5 +145,6 @@
   "editor.formatOnSave": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {},
-  "editor.lineNumbers": "relative"
+  "editor.lineNumbers": "relative",
+  "explorer.confirmDelete": false
 }
