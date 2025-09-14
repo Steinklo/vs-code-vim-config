@@ -146,5 +146,17 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {},
   "editor.lineNumbers": "relative",
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "latex": false
+  },
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "explorer.confirmDragAndDrop": false
 }

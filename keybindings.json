@@ -5,6 +5,11 @@
     "when": "!editorTextFocus && (terminalFocus || explorerViewletFocus || panelFocus || sideBarFocus)"
   },
   {
+    "key": "escape",
+    "command": "closeMarkersNavigation",
+    "when": "markersNavigationVisible"
+  },
+  {
     "key": "ctrl+t",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "!terminalFocus"
